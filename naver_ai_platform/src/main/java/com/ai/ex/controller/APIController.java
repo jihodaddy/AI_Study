@@ -15,6 +15,7 @@ import com.ai.ex.model.CelebrityVO;
 import com.ai.ex.model.FaceVO;
 import com.ai.ex.service.CFRCelebrityService;
 import com.ai.ex.service.CFRFaceRecogService;
+import com.ai.ex.service.ChatbotService;
 import com.ai.ex.service.OCRService;
 import com.ai.ex.service.ObjectDetectionService;
 import com.ai.ex.service.PoseEstimationService;
@@ -44,6 +45,9 @@ public class APIController {
 	@Autowired
 	private TTSService ttsService;
 	
+	@Autowired
+	private ChatbotService chatService;
+		
 	// index 페이지 이동
 	@RequestMapping("/")
 	public String Index() {
@@ -214,4 +218,34 @@ public class APIController {
 			public String ttsForm() {
 				return "/ttsView";
 			}
+		 
+		 //챗봇: 질문 메시지 전송하고 결과 받아서 출력
+			/*
+			 * @RequestMapping("/chatbot") public void chatbot() { String result =
+			 * chatService.main("하는일은 뭔데"); System.out.println(result); }
+			 */
+		 
+		 @RequestMapping("/chatbotForm")
+		 public String chatbotForm() {
+			 return "/chatbotForm";
+		 }
+		 
+		 @RequestMapping("/chatbotForm2")
+		 public String chatbotForm2() {
+			 return "/chatbotForm2";
+		 }
+		 @RequestMapping("/chatbotForm3")
+		 public String chatbotForm3() {
+			 return "/chatbotForm3";
+		 }
+		 @RequestMapping("/chatbotForm4")
+		 public String chatbotForm4() {
+			 return "/chatbotForm4";
+		 }
+		 @RequestMapping("/myChatbotForm")
+		 public String myChatbotForm() {
+			 return "/myChatbotForm";
+		 }
+		 
+		 
 }
