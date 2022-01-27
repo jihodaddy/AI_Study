@@ -19,6 +19,12 @@
 		<a href="/sttForm2">Speech To Text(라디오)</a><br>
 		<a href="/clovaTTSForm">Text To Speech  </a><br>
 		<a href="/ttsForm">Text To Speech(언어선택)  </a><br>
+		<a href="/chatbotForm">챗봇</a><br>
+		<a href="/chatbotForm2">챗봇: 채팅창</a><br>
+		<a href="/chatbotForm3">챗봇: 채팅창 + 음성</a><br>
+		<a href="/chatbotForm4">챗봇: 채팅창 + 음성+ 이미지/멀티링크 답변</a><br>
+		<hr>
+		<a href="/myChatbotForm">마이 챗봇</a><br>
 		
 	</body>
 </html>
